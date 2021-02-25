@@ -7,26 +7,28 @@ List<CategoryModel> getCategories() {
 
   //1
   categoryModel = CategoryModel();
-  categoryModel.categoryName = "أعمال";
+  categoryModel.categoryName = "تكنولوجيا";
   categoryModel.imageUrl =
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80";
-  categoryModel.category = 'business';
+  "https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg";
+  categoryModel.category = 'technology';
   categories.add(categoryModel);
 
   //2
   categoryModel = CategoryModel();
-  categoryModel.categoryName = "فن";
+  categoryModel.categoryName = "رياضة";
   categoryModel.imageUrl =
-      "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80";
-  categoryModel.category = 'entertainment';
+  "https://www.telegraph.co.uk/content/dam/football/2019/02/07/TELEMMGLPICT000166342089_trans_NvBQzQNjv4BqUgehH7knIs2mL4LO-crfgorempWLTe02qz9Fy_-wUAM.jpeg";
+  categoryModel.category = 'sport';
   categories.add(categoryModel);
+
+
 
   //3
   categoryModel = CategoryModel();
-  categoryModel.categoryName = "عام";
+  categoryModel.categoryName = "دراما";
   categoryModel.imageUrl =
-      "https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
-  categoryModel.category = 'general';
+  "https://www.almaalomah.com/wp-content/uploads/2019/06/Netflix.jpg";
+  categoryModel.category = 'entertainment';
   categories.add(categoryModel);
 
   //4
@@ -45,21 +47,23 @@ List<CategoryModel> getCategories() {
   categoryModel.category = 'science';
   categories.add(categoryModel);
 
-  //5
+  //6
+
   categoryModel = CategoryModel();
-  categoryModel.categoryName = "رياضة";
+  categoryModel.categoryName = "أعمال";
   categoryModel.imageUrl =
-      "https://images.unsplash.com/photo-1495563923587-bdc4282494d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80";
-  categoryModel.category = 'sport';
+  "https://www.yourvalued.co.uk/wp-content/uploads/2018/11/value-business.jpg";
+  categoryModel.category = 'business';
+  categories.add(categoryModel);
+  //7
+  categoryModel = CategoryModel();
+  categoryModel.categoryName = "عام";
+  categoryModel.imageUrl =
+  "https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
+  categoryModel.category = 'general';
   categories.add(categoryModel);
 
-  //5
-  categoryModel = CategoryModel();
-  categoryModel.categoryName = "تقنية";
-  categoryModel.imageUrl =
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80";
-  categoryModel.category = 'technology';
-  categories.add(categoryModel);
+
 
   return categories;
 }

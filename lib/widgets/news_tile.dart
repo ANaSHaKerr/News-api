@@ -28,49 +28,56 @@ class NewsTile extends StatelessWidget {
       hoursStr = 'منذ ساعتين';
     else
       hoursStr = hours < 11 ? 'منذ $hours ساعات' : 'منذ $hours ساعة';
-    return GestureDetector(
-      onTap: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (ctx) => ArticleView(newsUrl)));
-      },
-      child: Card(
-        child: Container(
-          margin: EdgeInsets.all(16),
-          child: Column(
-            children: <Widget>[
-              ClipRRect(
-                borderRadius: BorderRadius.circular(7),
-                child: Stack(children: [
-                  Image.network(
+    return Padding(
+      padding: const EdgeInsets.all(6.0),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (ctx) => ArticleView(newsUrl)));
+        },
+        child: Card(
+          elevation: 10,
+          child: Container(
+            margin: EdgeInsets.all(16),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(bottom:4.0),
+                  child: Container(
+                    alignment: Alignment.topRight,
+                    child: Text(
+                      hoursStr,
+                      style: TextStyle(color: Colors.white70, fontSize: 16),
+                    ),
+                  ),
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(15),
+                  child: Image.network(
                     imageUrl,
                     fit: BoxFit.cover,
                   ),
-                  Container(
-                    padding: EdgeInsets.all(4),
-                    decoration: BoxDecoration(color: Colors.black38),
-                    child: Text(
-                      hoursStr,
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
-                  )
-                ]),
-              ),
-              Text(
-                title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                textAlign: TextAlign.end,
-              ),
-              SizedBox(
-                height: 8,
-              ),
-              Text(
-                description,
-                textAlign: TextAlign.end,
-                style: TextStyle(color: Colors.grey[700]),
-                maxLines: 3,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Text(
+                    title,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    textAlign: TextAlign.end,
+                  ),
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  description,
+                  textAlign: TextAlign.end,
+                  style: TextStyle(color: Colors.grey),
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
           ),
         ),
       ),

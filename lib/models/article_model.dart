@@ -10,4 +10,27 @@ class ArticleModel {
       this.imageUrl,
       this.content,
       this.publishedAt});
+
+ /* Map<String, dynamic> toMap() {
+    return {
+      'author': author,
+      'title': title,
+      'description': description,
+      'url': url,
+      'imageUrl': imageUrl,
+      'content': content,
+      'publishedAt': publishedAt,
+    };
+  }
+  ArticleModel.fromMap(Map<String, dynamic> map) {
+    author = map['author'];
+    title = map['title'];
+    description = map['description'];
+    url = map['url'];
+    imageUrl = map['imageUrl'];
+    content = map['content'];
+    publishedAt = map['publishedAt'];
+
+
+  }*/
 }

@@ -26,6 +26,13 @@ dependencies:
   http: ^0.12.2
   cached_network_image: ^2.4.1
   webview_flutter: ^1.0.7
+  flutter_launcher_icons: "^0.7.2"
+  animated_rail:
+  awesome_dialog:
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -77,3 +84,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/

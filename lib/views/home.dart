@@ -37,9 +37,9 @@ class _HomeState extends State<Home> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('فلاتر'),
+            Text('My'),
             Text(
-              'أخبار',
+              'News',
               style: TextStyle(color: Colors.blue),
             )
           ],
@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
         children: [
           Container(
             padding: EdgeInsets.symmetric(horizontal: 12),
-            height: 70,
+            height: 50,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               shrinkWrap: true,

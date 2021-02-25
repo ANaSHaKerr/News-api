@@ -19,12 +19,13 @@ class _ArticleViewState extends State<ArticleView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('فلاتر'),
+              Text('My'),
             Text(
-              'أخبار',
+              'News',
               style: TextStyle(color: Colors.blue),
             )
           ],
